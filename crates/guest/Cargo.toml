@@ -1,0 +1,13 @@
+[package]
+name = "zkvm-c-guest"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[[bin]]
+name = "zkvm-c-guest"
+path = "src/main.rs"
+
+[dependencies]
+risc0-zkvm = { version = "1.2.4", default-features = false, features = ["std"] }
+

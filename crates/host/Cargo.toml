@@ -1,0 +1,14 @@
+[package]
+name = "zkvm-c-host"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "zkvm-c-host"
+path = "src/main.rs"
+
+[dependencies]
+risc0-zkvm = { version = "1.2.4", features = ["prove"] }
+serde = { version = "1.0.218", features = ["derive"] }
+serde_json = "1.0.139"
+sha2 = "0.10.8"
